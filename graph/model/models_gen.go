@@ -3,12 +3,12 @@
 package model
 
 type NewTodo struct {
-	Description string `json:"description"`
+	Description string `json:"description" `
 	Status      string `json:"status"`
 }
 
 type Todo struct {
-	ID          string `json:"id"`
+	ID          string `json:"id" bson:"_id"`
 	Description string `json:"description"`
 	Status      bool   `json:"status"`
 }
